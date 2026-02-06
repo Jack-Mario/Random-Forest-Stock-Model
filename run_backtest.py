@@ -96,6 +96,11 @@ if __name__ == '__main__':
                     title='Portfolio Value: ML Trading Strategy vs Equal-Weight B&H Index')
         print(f"  Saved plot to {res_dir / 'portfolio_equity.png'}")
         
+        # Save equity curve for comparison with real trades
+        equity_curve.to_csv(res_dir / 'backtest_equity.csv')
+        print(f"  Saved backtest data to {res_dir / 'backtest_equity.csv'}")
+        print("\n  💡 Run 'python plot_real_vs_backtest.py' to compare with real trades")
+        
     except Exception as e:
         print(f"Error: {e}")
         import traceback

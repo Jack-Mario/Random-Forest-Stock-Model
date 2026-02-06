@@ -1,5 +1,13 @@
 data/
 models/
+
 src/__pycache__/
 **/__pycache__/
 *.pyc
+
+.venv/
+venv/
+
+# Secrets & config with API keys
+config.py
+trade_log.json
