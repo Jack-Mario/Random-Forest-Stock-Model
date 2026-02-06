@@ -1,0 +1,12 @@
+from src.data_fetch import fetch_and_save
+
+if __name__ == '__main__':
+    # Update tickers here
+    tickers = [
+        'ABB.ST', 'ADDT-B.ST', 'ALFA.ST', 'ASSA-B.ST', 'AZN.ST', 'ATCO-A.ST', 'BOL.ST',
+        'EPI-A.ST', 'EQT.ST', 'ERIC-B.ST', 'ESSITY-B.ST', 'EVO.ST', 'SHB-A.ST', 'HM-B.ST',
+        'HEXA-B.ST', 'INDU-C.ST', 'INVE-B.ST', 'LIFCO-B.ST', 'NIBE-B.ST', 'NDA-SE.ST',
+        'SAAB-B.ST', 'SAND.ST', 'SCA-B.ST', 'SEB-A.ST', 'SKA-B.ST', 'SKF-B.ST', 'SWED-A.ST',
+        'TEL2-B.ST', 'TELIA.ST', 'VOLV-B.ST'
+    ]
+    fetch_and_save(tickers, out_dir='data')
